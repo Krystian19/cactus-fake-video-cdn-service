@@ -77,4 +77,4 @@ typings/
 
 # Ignores everything inside videos file except the note.txt file
 src/videos/*
-!src/videos/919eee75-3216-49de-983d-f8c3305395bf.mp4
+!test.mp4
