@@ -75,6 +75,6 @@ typings/
 # FuseBox cache
 .fusebox/
 
-# Ignores everything inside videos file except the note.txt file
+# Ignores everything inside videos file except the test.mp4 file
 src/videos/*
 !test.mp4
