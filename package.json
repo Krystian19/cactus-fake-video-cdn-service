@@ -1,0 +1,19 @@
+{
+  "name": "fake-video-cdn",
+  "version": "1.0.0",
+  "description": "Use this script as a service to mimic a real content delivery network for video files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Krystian19/fake-video-cdn.git"
+  },
+  "author": "Jan Guzman <janfrancisco19@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Krystian19/fake-video-cdn/issues"
+  },
+  "homepage": "https://github.com/Krystian19/fake-video-cdn#readme"
+}
