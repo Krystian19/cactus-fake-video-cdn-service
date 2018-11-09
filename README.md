@@ -4,7 +4,7 @@ Use this script as a service to mimic a real content delivery network for video 
 ## Requirements
 ```sh
 docker -v
-Docker version 18.03.0-ce # Or later
+Docker version 18.03.0-ce # or later
 ```
 
 ## Docker-compose setup example
