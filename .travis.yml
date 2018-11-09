@@ -11,8 +11,8 @@ before_install:
   - docker build -t janguzman/fake_video_cdn .
   - docker images
 install:
-  - docker run -ti --name=fake_video_cdn -d -p 9000:3000 janguzman/fake_video_cdn
+  - docker run -ti --name=fake_video_cdn -d -v $(pwd)/src/videos/:/app/src/videos/ -p 9000:3000 janguzman/fake_video_cdn
   - docker ps -a
 
 script:
-  - docker exec -ti fake_img_cdn ava
+  - docker exec -ti fake_video_cdn ava
