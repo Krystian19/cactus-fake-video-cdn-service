@@ -4,7 +4,7 @@ const pathLib = require('path')
 const fs = require('fs')
 const PORT = process.env.SERVER_PORT || 3000;
 
-app.get('/videos/:video', function (req, res) {
+app.get('/:video', function (req, res) {
   const { video } = req.params;
   const path = pathLib.join(__dirname, 'videos', video) + '.mp4';
 

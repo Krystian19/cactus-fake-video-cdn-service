@@ -17,7 +17,7 @@ services:
     build:
       ./fake-video-cdn
     volumes:
-      - ./fake-video-cdn:/app
+      - ./fake-video-cdn/src/videos/:/app/src/videos/
     ports: ['9000:3000']
 ```
 
@@ -34,7 +34,7 @@ docker build --no-cache -t janguzman/fake_video_cdn .
 
 Then create docker container. (Note: where "$(pwd)" is the absolute path to your local repo):
 ```sh
-docker run -ti --name=fake_video_cdn -d -v $(pwd):/app -p 9000:3000 janguzman/fake_video_cdn
+docker run -ti --name=fake_video_cdn -d -v $(pwd)/src/videos/:/app/src/videos/ -p 9000:3000 janguzman/fake_video_cdn
 ```
 
 ## Run the tests
