@@ -1,0 +1,18 @@
+sudo: required
+
+language: node_js
+node_js:
+  - "8"
+
+services:
+  - docker
+
+before_install:
+  - docker build -t janguzman/fake_image_cdn .
+  - docker images
+install:
+  - docker run -ti --name=fake_img_cdn -d -p 9000:3000 janguzman/fake_image_cdn
+  - docker ps -a
+
+script:
+  - docker exec -ti fake_img_cdn ava
