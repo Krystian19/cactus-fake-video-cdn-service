@@ -1,8 +1,4 @@
-# sudo: required
-
-env:
-  global:
-    - CC_TEST_REPORTER_ID=010ac1a5f24b409ffb79e29c900ab7121f6fef83b0f2ed29b0dd395359b2522e
+sudo: required
 
 language: node_js
 node_js:
@@ -12,19 +8,11 @@ services:
   - docker
 
 before_install:
-  - sudo docker build -t janguzman/fake_video_cdn .
-  - sudo docker images
+  - docker build -t janguzman/fake_video_cdn .
+  - docker images
 install:
-  - sudo docker run -ti --name=fake_video_cdn -d -v $(pwd)/src/videos/:/app/src/videos/ -p 9000:3000 janguzman/fake_video_cdn
-  - sudo docker ps -a
-
-before_script:
-  - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
-  - chmod +x ./cc-test-reporter
-  - ./cc-test-reporter before-build
+  - docker run -ti --name=fake_video_cdn -d -v $(pwd)/src/videos/:/app/src/videos/ -p 9000:3000 janguzman/fake_video_cdn
+  - docker ps -a
 
 script:
-  - sudo docker exec -ti fake_video_cdn ava
-
-after_script:
-  - ./cc-test-reporter after-build --coverage-input-type lcov --exit-code $TRAVIS_TEST_RESULT
+  - docker exec -ti fake_video_cdn ava
