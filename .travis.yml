@@ -1,4 +1,4 @@
-sudo: required
+# sudo: required
 
 env:
   global:
@@ -12,11 +12,11 @@ services:
   - docker
 
 before_install:
-  - docker build -t janguzman/fake_video_cdn .
-  - docker images
+  - sudo docker build -t janguzman/fake_video_cdn .
+  - sudo docker images
 install:
-  - docker run -ti --name=fake_video_cdn -d -v $(pwd)/src/videos/:/app/src/videos/ -p 9000:3000 janguzman/fake_video_cdn
-  - docker ps -a
+  - sudo docker run -ti --name=fake_video_cdn -d -v $(pwd)/src/videos/:/app/src/videos/ -p 9000:3000 janguzman/fake_video_cdn
+  - sudo docker ps -a
 
 before_script:
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
@@ -24,7 +24,7 @@ before_script:
   - ./cc-test-reporter before-build
 
 script:
-  - docker exec -ti fake_video_cdn ava
+  - sudo docker exec -ti fake_video_cdn ava
 
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
