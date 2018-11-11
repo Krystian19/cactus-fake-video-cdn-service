@@ -1,7 +1,7 @@
-# Fake Video CDN
+# Cactus Fake Video CDN
 [![Build Status](https://travis-ci.org///Krystian19/cactus-fake-video-cdn-service.svg?branch=master)](https://travis-ci.org///Krystian19/cactus-fake-video-cdn-service) [![Code Climate](https://codeclimate.com/github///Krystian19/cactus-fake-video-cdn-service/badges/gpa.svg)](https://codeclimate.com/github///Krystian19/cactus-fake-video-cdn-service) [![Test Coverage](https://codeclimate.com/github///Krystian19/cactus-fake-video-cdn-service/badges/coverage.svg)](https://codeclimate.com/github///Krystian19/cactus-fake-video-cdn-service/coverage)
 
-Use this script as a service to mimic a real content delivery network for video files.
+Use this script as a service to mimic a real content delivery network for video files for local development.
 
 ## Requirements
 ```sh
