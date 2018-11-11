@@ -2,7 +2,12 @@ const express = require('express')
 const app = express()
 const pathLib = require('path')
 const fs = require('fs')
+const cors = require('cors')
+const logger = require('morgan')
 const PORT = process.env.SERVER_PORT || 3000;
+
+app.use(cors());
+app.use(logger('dev'));
 
 app.get('/:video', function (req, res) {
   const { video } = req.params;
