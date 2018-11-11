@@ -15,11 +15,11 @@ How to use it inside a docker-compose file:
 version: '3'
 
 services:
-  fake_video_cdn: # fake-video-cdn service
+  cactus_video_cdn: # cactus-video-cdn service
     build:
-      ./fake-video-cdn
+      ./cactus-video-cdn
     volumes:
-      - ./fake-video-cdn/src/videos/:/app/src/videos/
+      - ./cactus-video-cdn/src/videos/:/app/src/videos/
     ports: ['9000:3000']
 ```
 
@@ -29,20 +29,20 @@ Inside the project's directory ...
 
 Build the docker image:
 ```
-docker build --no-cache -t janguzman/fake_video_cdn .
+docker build --no-cache -t janguzman/cactus_video_cdn .
 ```
 
 ### Run the project
 
 Then create docker container. (Note: where "$(pwd)" is the absolute path to your local repo):
 ```sh
-docker run -ti --name=fake_video_cdn -d -v $(pwd)/src/videos/:/app/src/videos/ -p 9000:3000 janguzman/fake_video_cdn
+docker run -ti --name=cactus_video_cdn -d -v $(pwd)/src/videos/:/app/src/videos/ -p 9000:3000 janguzman/cactus_video_cdn
 ```
 
 ## Run the tests
-Assuming the container's name is "fake_video_cdn", run this:
+Assuming the container's name is "cactus_video_cdn", run this:
 ```sh
-docker exec -ti fake_video_cdn ava
+docker exec -ti cactus_video_cdn ava
 ```
 
 ## Usage instructions
