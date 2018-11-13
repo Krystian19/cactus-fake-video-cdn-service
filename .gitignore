@@ -76,5 +76,5 @@ typings/
 .fusebox/
 
 # Ignores everything inside videos file except the test.mp4 file
-src/videos/*
+# src/videos/*
 !test.mp4
