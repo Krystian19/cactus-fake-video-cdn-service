@@ -1,0 +1,6 @@
+{
+  "exclude": [
+    "src/videos/**",
+    "**/node_modules/**"
+  ]
+}

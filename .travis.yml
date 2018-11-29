@@ -15,4 +15,5 @@ install:
   - docker ps -a
 
 script:
-  - docker exec -ti cactus_video_cdn ava
+  - docker exec -ti cactus_video_cdn yarn test
+after_success: yarn coverage

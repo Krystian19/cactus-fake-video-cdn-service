@@ -81,3 +81,8 @@ typings/
 # Ignores everything inside videos file except the test.mp4 file
 # src/videos/*
 !test.mp4.DS_Store
+
+# tests
+.nyc_output
+coverage.lcov
+/coverage/
