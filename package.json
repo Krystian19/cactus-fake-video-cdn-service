@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node ./src/index.js",
-    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov -t c180c18b-3721-4427-abe8-8729378d7307",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
     "test": "nyc ava"
   },
   "repository": {
