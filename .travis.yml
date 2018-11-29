@@ -16,4 +16,4 @@ install:
 
 script:
   - docker exec -ti cactus_video_cdn yarn test
-after_success: yarn coverage
+after_success: docker exec -ti cactus_video_cdn yarn coverage

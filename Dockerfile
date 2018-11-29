@@ -8,7 +8,7 @@ WORKDIR /app
 
 # Setup container dependencies
 RUN apt-get update && apt-get install -y --no-install-recommends apt-utils
-RUN apt-get install -y curl
+RUN apt-get install -y curl git
 
 # Install node related stuff
 RUN curl -sL https://deb.nodesource.com/setup_8.x | bash -
@@ -18,7 +18,7 @@ COPY . /app
 EXPOSE 3000
 
 # Install service manager
-RUN npm install -g yarn ava-cli nyc@13.1.0
+RUN npm install -g yarn ava-cli
 RUN yarn install
 
 CMD ["yarn", "start"]
