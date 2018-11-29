@@ -18,7 +18,7 @@ COPY . /app
 EXPOSE 3000
 
 # Install service manager
-RUN npm install -g yarn ava-cli
+RUN npm install -g yarn ava-cli nyc@13.1.0
 RUN yarn install
 
 CMD ["yarn", "start"]
