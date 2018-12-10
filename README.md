@@ -19,6 +19,7 @@ version: '3'
 
 services:
   cactus_video_cdn: # cactus-video-cdn service
+    container_name: cactus_video_cdn
     build:
       ./cactus-video-cdn
     volumes:
