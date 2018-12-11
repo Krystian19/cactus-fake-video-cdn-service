@@ -80,7 +80,7 @@ typings/
 
 # Ignores everything inside videos file except the test.mp4 file
 # src/videos/*
-!test.mp4.DS_Store
+!test.mp4
 
 # tests
 .nyc_output
