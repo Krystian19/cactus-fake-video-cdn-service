@@ -9,7 +9,6 @@ RUN apk update && apk upgrade && \
 COPY . /app
 EXPOSE 3000
 
-# Install service manager
 RUN npm install -g yarn ava-cli
 RUN yarn install
 
