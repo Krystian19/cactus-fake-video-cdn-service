@@ -40,24 +40,20 @@ docker build --no-cache -t janguzman/cactus_video_cdn .
 
 Then create docker container. (Note: where "$(pwd)" is the absolute path to your local repo):
 ```sh
-docker run -ti --name=cactus_video_cdn -d -v $(pwd)/src/videos/:/app/src/videos/ -p 9000:3000 janguzman/cactus_video_cdn
+docker run -ti --name=cactus_video_cdn -d -v $(pwd)/videos:/var/www/hls/live -p 9000:80 -p 1935:1935 janguzman/cactus_video_cdn
 ```
 
-## Run the tests
+<!-- ## Run the tests
 Assuming the container's name is "cactus_video_cdn", run this:
 ```sh
 docker exec -ti cactus_video_cdn ava
-```
+``` -->
 
 ## Usage instructions
 Just place the videos inside the src/videos directory. And refer to the video by the fullname of the file (without the file extension):
 ```
-http://localhost:9000/test
+http://localhost:9000/live/test.mp4
 ```
-
-<!-- ### Todo list
-- [x] Setup the Dockerfile.
-- [ ] Setup examples and use cases. -->
 
 ## License
 MIT © [Jan Guzman](https://github.com/Krystian19)
