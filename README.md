@@ -49,6 +49,15 @@ Assuming the container's name is "cactus_video_cdn", run this:
 docker exec -ti cactus_video_cdn ava
 ``` -->
 
+## Generate HLS files from a video file
+
+Code Gist: `https://gist.github.com/mrbar42/ae111731906f958b396f30906004b3fa`
+Explanation: `https://docs.peer5.com/guides/production-ready-hls-vod/`
+
+```sh
+./create-vod-hls.sh <video_file.mp4>
+```
+
 ## Usage instructions
 Just place the videos inside the src/videos directory. And refer to the video by the fullname of the file (without the file extension):
 ```
