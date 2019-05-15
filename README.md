@@ -58,6 +58,12 @@ Explanation: `https://docs.peer5.com/guides/production-ready-hls-vod/`
 ./create-vod-hls.sh <video_file.mp4>
 ```
 
+## Live stream a videofile to the HLS video server
+Once the live stream is finished the resulting mp4 file will be saved in the `/var/www/hls/live` path inside the container.
+```sh
+ffmpeg -i video.mp4 -c:v h264 -c:a aac -strict -2 -f flv rtmp://localhost:1935/app/<unique_video_name>
+```
+
 ## Usage instructions
 Just place the videos inside the src/videos directory. And refer to the video by the fullname of the file (without the file extension):
 ```
