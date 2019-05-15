@@ -77,6 +77,6 @@ echo -e "Executing command:\nffmpeg ${misc_params} -i ${source} ${cmd}"
 ffmpeg ${misc_params} -i ${source} ${cmd}
 
 # create master playlist file
-echo -e "${master_playlist}" > ${target}/playlist.m3u8
+echo -e "${master_playlist}" > ${target}/index.m3u8
 
 echo "Done - encoded HLS is at ${target}/"
