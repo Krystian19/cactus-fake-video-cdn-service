@@ -11,7 +11,7 @@ services:
   - docker
 
 before_install:
-  - npm install -g npx@6.4.1
+  - npm install -g npx
   - docker build -t janguzman/cactus_video_cdn .
   - docker images
 install:
