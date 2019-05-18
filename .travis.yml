@@ -2,7 +2,10 @@ sudo: required
 
 language: node_js
 node_js:
-  - "8"
+  - "10"
+
+git:
+  lfs_skip_smudge: true
 
 services:
   - docker
