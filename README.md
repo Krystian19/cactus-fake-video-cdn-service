@@ -23,8 +23,8 @@ services:
     build:
       ./cactus-video-cdn
     volumes:
-      - ./cactus-video-cdn/src/videos/:/app/src/videos/
-    ports: ['9000:3000']
+      - ./cactus-video-cdn/videos/:/var/www/hls/live
+    ports: ['9000:80', '1935:1935']
 ```
 
 ## Standalone Setup
