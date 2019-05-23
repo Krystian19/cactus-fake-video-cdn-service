@@ -43,12 +43,6 @@ Then create docker container. (Note: where "$(pwd)" is the absolute path to your
 docker run -ti --name=cactus_video_cdn -d -v $(pwd)/videos:/var/www/hls/live -p 9000:80 -p 1935:1935 janguzman/cactus_video_cdn
 ```
 
-<!-- ## Run the tests
-Assuming the container's name is "cactus_video_cdn", run this:
-```sh
-docker exec -ti cactus_video_cdn ava
-``` -->
-
 ## Generate HLS files from a video file
 
 Code Gist: `https://gist.github.com/mrbar42/ae111731906f958b396f30906004b3fa`
