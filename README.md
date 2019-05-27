@@ -1,5 +1,5 @@
 # Cactus Fake Video CDN
-[![Build Status](https://travis-ci.org/Krystian19/cactus-fake-video-cdn-service.svg?branch=master)](https://travis-ci.org/Krystian19/cactus-fake-video-cdn-service) [![Code Climate](https://codeclimate.com/github/Krystian19/cactus-fake-video-cdn-service/badges/gpa.svg)](https://codeclimate.com/github/Krystian19/cactus-fake-video-cdn-service) [![Test Coverage](https://codecov.io/gh/Krystian19/cactus-fake-video-cdn-service/branch/master/graph/badge.svg)](https://codecov.io/gh/Krystian19/cactus-fake-video-cdn-service)
+[![Build Status](https://travis-ci.org/Krystian19/cactus-fake-video-cdn-service.svg?branch=master)](https://travis-ci.org/Krystian19/cactus-fake-video-cdn-service) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/65bb1660e35a4cc8ad38b0e8ad425c8f)](https://www.codacy.com/app/janfrancisco19/cactus-fake-video-cdn-service?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Krystian19/cactus-fake-video-cdn-service&amp;utm_campaign=Badge_Grade) [![Test Coverage](https://codecov.io/gh/Krystian19/cactus-fake-video-cdn-service/branch/master/graph/badge.svg)](https://codecov.io/gh/Krystian19/cactus-fake-video-cdn-service)
 
 Use this script as a service to mimic a real content delivery network for video files for local development.
 
