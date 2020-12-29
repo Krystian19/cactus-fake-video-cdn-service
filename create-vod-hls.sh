@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Original script file
+# https://gist.github.com/mrbar42/ae111731906f958b396f30906004b3fa
+
 set -e
 
 # Usage create-vod-hls.sh SOURCE_FILE [OUTPUT_NAME]
