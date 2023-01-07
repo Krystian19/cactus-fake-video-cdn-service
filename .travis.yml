@@ -1,0 +1,23 @@
+sudo: required
+
+language: gne
+node_js:
+  - "10"
+
+git:
+  lfs_skip_smudge: true
+
+services:
+  - docker
+
+before_install:
+  - npm install -g npx
+  - docker build -t janguzman/cactus_video_cdn .
+  - docker images
+install:
+  - docker run -ti --name=cactus_video_cdn -d -e CODECOV_TOKEN=$CODECOV_TOKEN -v $(pwd)/src/videos/:/app/src/videos/ -p 9000:3000 janguzman/cactus_video_cdn
+  - docker ps -a
+
+script:
+  - docker exec -ti cactus_video_cdn nginx -c /etc/nginx/nginx.conf -t
+after_success: npx codecov
