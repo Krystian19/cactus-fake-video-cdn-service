@@ -1,5 +1,5 @@
 # Cactus Fake Video CDN
-[![Build Status](https://travis-ci.org/Krystian19/cactus-fake-video-cdn-service.svg?branch=master)](https://travis-ci.org/Krystian19/cactus-fake-video-cdn-service) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/593a0a2c513643efbbf7c18abeb6c20b)](https://www.codacy.com/gh/Krystian19/cactus-fake-video-cdn-service/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=Krystian19/cactus-fake-video-cdn-service&amp;utm_campaign=Badge_Grade) [![Test Coverage](https://codecov.io/gh/Krystian19/cactus-fake-video-cdn-service/branch/master/graph/badge.svg)](https://codecov.io/gh/Krystian19/cactus-fake-video-cdn-service)
+[![Build Status](https://travis-ci.org/Krystian19/cactus-fake-video-cdn-service.svg?branch=master)](https://travis-ci.org/Krystian19/cactus-fake-video-cdn-service) 
 
 Use this script as a service to mimic a real content delivery network for video files for local development.
 
